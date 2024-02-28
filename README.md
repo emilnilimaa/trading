@@ -1,1 +1,3 @@
 # trading
+
+Simple test project.
