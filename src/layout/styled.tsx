@@ -9,6 +9,12 @@ export const LayoutWrapper = styled.div`
 
 export const LayoutContainer = styled.div`
   max-width: 680px;
-  min-width: 360px;
+  min-width: 300px;
   width: 680px;
+  padding-left: 20px;
+  padding-right: 20px;
+`;
+
+export const PageWrapper = styled.div`
+  padding-top: 20px;
 `;
