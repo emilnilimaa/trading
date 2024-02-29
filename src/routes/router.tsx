@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
+import LoginPage from "../pages/LoginPage";
+import StockPage from "../pages/StockPage";
 import { RequireAuth } from "./RequireAuth";
 import Root from "./Root";
 
@@ -12,6 +14,14 @@ const pages: any[] = [
         <HomePage />
       </RequireAuth>
     ),
+  },
+  {
+    path: "stock/:id",
+    element: <StockPage />, // Does not require auth, but with auth shows extra components
+  },
+  {
+    path: "login",
+    element: <LoginPage />, // Does not require auth, but with auth shows extra components
   },
 ];
 
