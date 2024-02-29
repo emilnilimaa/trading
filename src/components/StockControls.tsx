@@ -34,6 +34,7 @@ const StockControls = (props: { stock: Stock }) => {
     const newBalance = balance - props.stock.price * amount;
     setBalance(newBalance);
     addStocks(props.stock.name, amount);
+    setError("");
   };
 
   const sell = () => {
@@ -48,6 +49,7 @@ const StockControls = (props: { stock: Stock }) => {
     const newBalance = balance + props.stock.price * amount;
     setBalance(newBalance);
     removeStocks(props.stock.name, amount);
+    setError("");
   };
 
   const getCurrentAmountValue = () => {
