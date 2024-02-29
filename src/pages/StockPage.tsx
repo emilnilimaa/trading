@@ -15,7 +15,7 @@ type PriceData = {
 
 const StockPage = () => {
   const { id } = useParams();
-  const { stocks, stockHistory, fetchStocks } = useStocks();
+  const { stocks, stockHistory } = useStocks();
   const theme = useTheme();
   const authenticated = useAuthStore.use.authenticated();
 
