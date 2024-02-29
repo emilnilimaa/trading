@@ -33,7 +33,7 @@ const StockPage = () => {
     const today = new Date();
     const minuteSpan = addMinutes(today, -10);
 
-    // Filter to only show last 3 min.
+    // Filter to only show last 10 min.
     const filteredPriceData = priceData.filter((data) => {
       return isBefore(minuteSpan, data.date);
     });
