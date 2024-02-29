@@ -21,7 +21,7 @@ const pages: any[] = [
   },
   {
     path: "login",
-    element: <LoginPage />, // Does not require auth, but with auth shows extra components
+    element: <LoginPage />,
   },
 ];
 
