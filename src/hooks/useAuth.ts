@@ -8,10 +8,8 @@ type User = {
 
 interface AuthState {
   user: User | null;
-  //token: string | null;
   authenticated: boolean;
   setUser(user: User): void;
-  //setToken(token: string): void;
   setAuthenticated: (authenticated: boolean) => void;
 }
 
