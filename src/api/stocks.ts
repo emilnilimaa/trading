@@ -7,6 +7,8 @@ export const getStocks = async (): Promise<Stock[]> => {
     { name: "AAPL", price: generateStockPrice("AAPL") },
     { name: "GOOGL", price: generateStockPrice("GOOGL") },
     { name: "MSFT", price: generateStockPrice("MSFT") },
+    { name: "AXFO", price: generateStockPrice("AXFO") },
+    { name: "TSLA", price: generateStockPrice("TSLA") },
   ];
 };
 
@@ -19,4 +21,8 @@ const generateStockPrice = (name: string): number => {
   const d = new Date();
   const n = d.getTime();
   return Math.abs(3 * Math.sin(2 * hash * n) + Math.random() * amplitude);
+};
+
+export const formatStockPrice = (price: number): string => {
+  return price.toFixed(2);
 };
