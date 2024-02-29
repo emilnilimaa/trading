@@ -2,7 +2,6 @@ import { ThemeProvider as MuiThemeProvider } from "@mui/material";
 import { Suspense } from "react";
 import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import "./App.css";
 import router from "./routes/router";
 import { lightTheme } from "./theme/SiteTheme";
 
